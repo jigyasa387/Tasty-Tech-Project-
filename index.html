@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<title>Tasty Tech</title>
+
+	<!-- bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- css stylesheets -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="assets/css/business-casual.css" rel="stylesheet">
+
+	 <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+    <header>
+        <!-- nav bar -->        
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- links on nav bar -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Find A Recipe</a></li>
+                        <li><a href="user-recipes.html">User Submitted Recipes</a></li>
+                    </ul>         
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>        
+    </header>
+
+
+
+	<!-- page heading -->
+    <div class="brand"><img src="assets/images/tastytech_logo_2.png"></div>
+    
+
+    <!-- main content -->
+    <div class="container">
+        <div class="box">
+
+            <!-- row 1 -->
+            <div class="row">           
+                <div class="col-md-12">
+                	
+                    <!-- page instructions -->
+                    <p>Welcome to Tasty Tech!</p>
+
+                    <p>Search for recipes by adding ingredients to the textboxes (separated by commas) and clicking "Find Recipes." Click on the dish to view the recipe. Before you leave, share the recipe of your favorite dish with the "Add a Recipe" panel. Bon App&eacute;tit!</p>
+
+                  
+                    <!-- Input Form -->
+                    <form class="text-center">
+                      <h2>
+                        <input type="text" placeholder="Add ingredients" id="ingredient">
+                        <input type="text" placeholder="Cuisine (optional)" id="cuisine">
+                        <input type="submit" value="Find Recipes" id="addIngredient" class="btn btn-primary btn-lg raised">
+                      </h2>
+                    </form>
+                    
+
+                    <!-- ingredients list -->
+                    <div id="list"></div>
+
+                </div>
+            </div>
+
+            <!-- row 2 -->
+            <div class="row">                        
+                <div class="col-md-12">
+
+                    <!-- dishes -->
+                    <div id="dishes" class="row text-center"></div>
+
+                    <!-- recipes -->
+                     <div class="ul" id="ingredientList"></div> <br>
+
+                    <div class="unfloat" id="recipes"></div>
+
+                 </div>
+            </div>
+        </div>
+
+
+    <!-- end of main content wrapper -->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- scripts -->
+<script   src="http://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
+<script src="assets/javascript/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+/******************* other *******************/
+#dishes {
+    text-align: left;
+}
+#dishes > .col-md-4{
+  display:inline-block;
+  float:none;
+  text-align:center;
+}
+.height {
+	margin-bottom: 60px;
+}
+.ingredientImage{
+  width: 300;
+  height: 200;
+}
+.text {
+  color: #428bca;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.unfloat {
+	clear: both;
+}
+
+
+
+
+/******************* Bootstrap button classes *******************/
+.btn-primary.raised {
+	box-shadow: 0 3px 0 0 #007299;
+}
+
+
+
+/******************* media queries *******************/
+@media screen and (min-width:768px) and (max-width:991px) {
+    #dishes {
+        text-align: center;
+    }
+}
